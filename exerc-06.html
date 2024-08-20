@@ -1,0 +1,30 @@
+<script>
+// Um motorista de táxi deseja calcular o rendimento de seu carro na praça. Sabendo-se que o preço do combustível é de R$ 4,87, escreva um programa para ler: a marcação do odômetro (Km) no início do dia, a marcação (Km) no final do dia, o número de litros de combustível gasto e o valor total (R$) recebido dos passageiros. Calcular e escrever: a média do consumo em Km/L e o lucro (líquido) do dia.
+const precoCombustivel = 4.87; 
+
+function calcularRendimentoELucro() {
+   
+    const kmInicio = parseFloat(prompt("Digite a marcação do odômetro no início do dia (Km):"));
+    const kmFim = parseFloat(prompt("Digite a marcação do odômetro no final do dia (Km):"));
+
+    
+    const litrosGastos = parseFloat(prompt("Digite o número de litros de combustível gasto:"));
+    const valorTotalRecebido = parseFloat(prompt("Digite o valor total recebido dos passageiros (R$):"));
+
+    
+    if (isNaN(kmInicio) || isNaN(kmFim) || isNaN(litrosGastos) || isNaN(valorTotalRecebido) ||
+        kmInicio < 0 || kmFim < 0 || litrosGastos <= 0 || valorTotalRecebido < 0) {
+        console.log("Por favor, insira valores válidos e positivos.");
+        return;
+    }
+    const distanciaPercorrida = kmFim - kmInicio;
+    const mediaConsumo = distanciaPercorrida / litrosGastos;
+    const custoCombustivel = litrosGastos * precoCombustivel;
+    const lucroLiquido = valorTotalRecebido - custoCombustivel;
+//saida
+    console.log(`Média de consumo: ${mediaConsumo.toFixed(2)} Km/L`);
+    console.log(`Lucro líquido do dia: R$ ${lucroLiquido.toFixed(2)}`);
+}
+
+calcularRendimentoELucro();
+</script>>
