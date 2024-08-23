@@ -1,0 +1,16 @@
+<script>
+    let nota1= parseFloat(prompt("Nota 1"))
+    let nota2= parseFloat(prompt("Nota 2"))
+    const mediaMini= 0.6
+    //processamento
+    resposta=""
+    let media= (nota1+nota2)/2
+    if(media>mediaMini){
+       resposta="PARABÉNS!Você foi aprovado!"
+    }
+    else media<mediaMini
+      resposta="Infelizmente você foi reprovado!"
+    //saida
+    document.write("Media semestral:<br>"+media,"<br>" +resposta)
+    
+    </script>
