@@ -1,0 +1,17 @@
+<script> 
+    //entrada
+    let anoNsc= prompt("Informe o ano do seu nascimento:")
+    
+    //processamento
+    const ano=2024
+    const podeV= ano-anoNsc
+    
+    let resposta=""
+    if (anoNsc <= podeV){
+          resposta="Voce pode votar esse ano"
+    }else{
+       resposta="Voce nao pode votar esse ano"
+    }
+    //saida
+    document.write(resposta)
+    </script>
