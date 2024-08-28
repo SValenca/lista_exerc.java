@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+//entrada
+let numeroDeMaca= parseFloat(prompt("Qual o numero de macas compradas ?"))
+//processamento
+function calcularTotalDaCompraMaca(numeroDeMaca){ 
+let resposta
+if(numeroDeMaca < 12){
+    resposta=0.30
+}
+else{
+    resposta=0.25
+}
+const totalMaca= numeroDeMaca*resposta
+return totalMaca
+}
+let totalMaca=calcularTotalDaCompraMaca(numeroDeMaca)
+//saida
+document.write("Total da compra e de:<br>"+"R$"+totalMaca)
+    
+    </script>

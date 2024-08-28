@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<script> 
+//entrada
+let anoNsc= parseFloat(prompt("Informe o ano do seu nascimento:"))
+    
+//processamento
+function analisarSePodeVotar(anoNsc){
+const anoAtual=2024   
+const idade= anoAtual-anoNsc
+let resposta=""
+if (idade >= 16){
+  resposta="Voce pode votar esse ano"
+}else{
+  resposta="Voce nao pode votar esse ano"}
+return resposta
+}
+let resposta=analisarSePodeVotar(anoNsc)
+//saida
+document.write(resposta)
+</script>

@@ -10,7 +10,7 @@ function calcularNotasSeme(nota1=0,nota2=0){
 }
 function verificarNotasSeme(media){
 let resposta=""
-let media= (nota1+nota2)/2
+
 if(media>6){
    resposta="PARABÉNS!Você foi aprovado!"
 }
@@ -21,8 +21,8 @@ else {
   return resposta
 }
 let totalNota =calcularNotasSeme(nota1,nota2) 
-let resposta=verificarNotasSeme(media)
+let resposta=verificarNotasSeme(totalNota)
 //saida
-document.write("Media semestral:<br>" +resposta)
+document.write("Média semestral: " + totalNota + "<br>" + resposta)
 
 </script>

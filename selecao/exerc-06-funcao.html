@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+//Reescreva o programa do exercício anterior considerando o zero como neutro, ou seja, se for digitado o valor zero, escrever a palavra zero
+
+//entrada
+let valor =parseFloat(prompt("Qual o valor ?"))
+
+// Processamento
+function verificarValorSeZeroN(valor){
+let resposta = ""
+if (valor > 0) {
+    resposta = "Positivo"
+} else if (valor < 0) {
+    resposta = "Negativo"
+} else {
+    resposta = "zero"}
+return resposta
+}
+let resposta=verificarValorSeZeroN(valor)
+//saida
+document.write(resposta)
+</script>
