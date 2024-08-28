@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+//entrada
+let valor1= parseFloat(prompt("Informe o primeiro valor:"))
+let valor2= parseFloat(prompt("Informe o segundo valor:"))
+//processamento
+function valorMaior(valor1,valor2){
+let resposta
+if (valor1 > valor2){
+    resposta= valor1
+}else {
+   resposta=valor2}
+return resposta
+}
+let resposta=valorMaior(valor1,valor2)
+//saida
+document.write("O maior valor é: <br>"+resposta)
+</script>

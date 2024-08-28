@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+//Escreva um programa para ler um valor e escrever se é positivo ou negativo. Considere o valor zero como positivo. 
+
+//entrada
+let valor=parseFloat(prompt("Qual o valor ?"))
+
+//processamento
+function verificarValorSe(valor){
+
+let resposta="" 
+if (valor >=0){
+    resposta= "Positivo"
+} else{
+ resposta="Negativo"}
+return resposta
+}
+let resposta=verificarValorSe(valor)
+//saida
+document.write(resposta)
+</script>
