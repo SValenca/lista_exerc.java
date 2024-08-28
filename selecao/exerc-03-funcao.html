@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<script>
+let nota1= parseFloat(prompt("Nota 1"))
+let nota2= parseFloat(prompt("Nota 2"))
+
+//processamento
+function calcularNotasSeme(nota1=0,nota2=0){
+  return (nota1+nota2)/2
+
+}
+function verificarNotasSeme(media){
+let resposta=""
+let media= (nota1+nota2)/2
+if(media>6){
+   resposta="PARABÉNS!Você foi aprovado!"
+}
+else {
+  resposta="Infelizmente você foi reprovado!"
+
+}
+  return resposta
+}
+let totalNota =calcularNotasSeme(nota1,nota2) 
+let resposta=verificarNotasSeme(media)
+//saida
+document.write("Media semestral:<br>" +resposta)
+
+</script>
