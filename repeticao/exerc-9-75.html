@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+function contadorMultiplosImpares(limite=200, multiplo = 3){
+    let resposta=""
+for (let numero=100; numero <= limite; numero++){
+    if (numero % 2 != 0){
+        resposta += `${numero} Multiplo de ${multiplo}<br>`
+    }else {
+        resposta += `${numero}  <br>`
+     }   
+    }
+    return resposta
+}
+
+document.write(contadorMultiplosImpares())
+
+
+</script>
